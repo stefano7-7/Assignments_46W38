@@ -1,0 +1,10 @@
+name: 46W38
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - matplotlib
+  - scipy
+  - python=3.13
+  - numpy
+prefix: C:\Users\stefano\miniconda3\envs\46W38
