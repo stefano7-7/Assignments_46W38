@@ -1,7 +1,18 @@
-number_min = int(input("write the first number (or type END to finish): "))
+"""
+This script ask User to input a series of numbers or input "end" to stop
+2 blocks:
+    1) first input is asked and used as initial value for number_min and number_max 
+    2) loop checking whether the last input is higher or lower than the previous ones
+Note: inputs are string and are changed into numbers
+"""
+number_string = input("write the first number (or type END to finish): ")
+if number_string.lower() == "end":
+    print("No numbers entered")
+    exit()  # termina subito il programma
+number_min = int(number_string)
 number_max = number_min
 list_numbers = [number_min]
-number_string = None 
+
 while number_string != "end":
     number_string = input("write another number (or type END to finish): ")
     if number_string.lower() == "end":
@@ -15,4 +26,5 @@ while number_string != "end":
 
 print(f"minimum is: {number_min}")
 print(f"maximum is: {number_max}")
-print(f"list of the numbers is {list_numbers}")
+print(f"list of the numbers is: {list_numbers}")
+
